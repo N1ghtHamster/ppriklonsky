@@ -4,6 +4,8 @@ package ru.job4j;
 * Calculate.
 *
 *@author Pavel Priklonsky (votymu@yandex.ru)
+*@version $Id$
+*@since 19.02.18
 */
  
 public class Calculate {
@@ -13,7 +15,16 @@ public class Calculate {
 *@peram args - args.
 */
 
-public static void main(String[] args){
-	System.out.println("Hello World");
+	public static void main(String[] args){
+		System.out.println("Hello World");
+	}
+
+/**
+*Method echo.
+*@param name Your name.
+*@return Echo, echo, echo : " + name;
+*/
+	public String echo(String name) {
+		return "Echo, echo, echo : " + name;
 	}
 } 
