@@ -15,7 +15,7 @@ public class Calculate {
 *@peram args - args.
 */
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		System.out.println("Hello World");
 	}
 
