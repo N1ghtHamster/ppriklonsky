@@ -19,7 +19,7 @@ public class Point {
      * @param x - x.
      * @param y - y.
      */
-    private Point(int x, int y) {
+    Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -29,7 +29,7 @@ public class Point {
      * @param that - that.
      * @return distance.
      */
-    private double distanceTo(Point that) {
+    public double distanceTo(Point that) {
         //Расчет дистанции между точками.
         return Math.sqrt(Math.pow(that.x - this.x, 2) + Math.pow(that.y - this.y, 2));
     }
