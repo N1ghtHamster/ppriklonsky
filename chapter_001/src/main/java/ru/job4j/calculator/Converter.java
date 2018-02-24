@@ -10,10 +10,10 @@ package ru.job4j.calculator;
 public class Converter {
 
     /**
-     *
+     *variable
      */
-    private int rubletodollar = 60;
-    private int rubletoeuro = 70;
+    private static final Integer rubletodollar = 60;
+    private static final Integer rubletoeuro = 70;
 
     /**
      *Method rubleToEuro.
