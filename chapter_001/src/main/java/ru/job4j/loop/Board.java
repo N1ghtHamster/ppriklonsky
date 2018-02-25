@@ -8,6 +8,12 @@ package ru.job4j.loop;
  */
 
 public class Board {
+    /**
+     * Нарисовать шахматную доску.
+     * @param width - высота доски.
+     * @param height - ширина доски.
+     * @return строковое значение записаное в StringBuilder.
+     */
     public String paint(int width, int height) {
         StringBuilder screen = new StringBuilder();
         String ln = System.lineSeparator();
