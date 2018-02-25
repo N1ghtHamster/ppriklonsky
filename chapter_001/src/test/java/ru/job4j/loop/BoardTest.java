@@ -5,10 +5,10 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
- *
- * @author Petr Arsentev (parsentev@yandex.ru)
+ * Псевдографика шахматная доска Тест.
+ * @author Pavel Priklonsky (votymu@yandex.ru)
  * @version $Id$
- * @since 0.1
+ * @since 25.02.2018
  */
 public class BoardTest {
     @Test

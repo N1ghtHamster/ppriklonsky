@@ -1,7 +1,7 @@
 package ru.job4j.loop;
 
 /**
- * Вычисление факториала.
+ * Псевдографика шахматная доска.
  * @author Pavel Priklonsky (votymu@yandex.ru)
  * @version $Id$
  * @since 25.02.2018
