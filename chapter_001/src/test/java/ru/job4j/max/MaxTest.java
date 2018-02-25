@@ -8,9 +8,7 @@ public class MaxTest {
     @Test
     public void whenFirstLessSecondLessThird() {
         Max maxim = new Max();
-        int result1 = maxim.max(1, 4);
-        int result2 = maxim.max(4, 3);
-        int result = maxim.max(result1, result2);
+        int result = maxim.max(maxim.max(1, 2), maxim.max(2, 4));
         assertThat(result, is(4));
     }
 }
