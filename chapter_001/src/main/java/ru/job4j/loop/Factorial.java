@@ -13,12 +13,9 @@ public class Factorial {
      * @param n - число для вычисления факториала
      */
     public int fac(int n) {
-        int factor = 0;
-        if (n >= 0) {
-            factor = 1;
-            for (int i = 1; i<= n; ++i)
-                factor *= i;
-        }
+        int factor = 1;
+        for (int i = 1; i<= n; ++i)
+            factor *= i;
         return factor;
     }
 }
