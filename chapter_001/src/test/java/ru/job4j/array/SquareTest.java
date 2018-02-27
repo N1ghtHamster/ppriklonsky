@@ -1,8 +1,6 @@
 package ru.job4j.array;
 
 import org.junit.Test;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -14,9 +12,10 @@ import static org.junit.Assert.assertThat;
  */
 public class SquareTest {
     @Test
-    public void whenSquareToFive {
+    public void whenSquareToFive(){
         Square square = new Square();
         int[] rsl = square.calculate(5);
-        assertThat(rsl, is());
+        int[] expect = {1, 4, 9, 16, 25};
+        assertThat(rsl, is(expect));
     }
 }

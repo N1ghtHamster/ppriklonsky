@@ -7,12 +7,17 @@ package ru.job4j.array;
  * @since 27.02.2018
  */
 public class Square {
+    /**
+     * Конструктор массива заполненный возыеденными в спепень числами.
+     * @param bound - размер массива.
+     * @return Заполненный массив.
+     */
     public int[] calculate(int bound) {
-        int[] rst = new int[bound];
+        int[] rsl = new int[bound];
         int cal = 1;
-        for (int i = 0; i < rst.length; i++) {
+        for (int i = 0; i < rsl.length; i++) {
             cal *= 2;
-            rst[i] = cal;
+            rsl[i] = cal;
         }
         return rsl;
     }
