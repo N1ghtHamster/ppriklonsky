@@ -8,5 +8,8 @@ package ru.job4j.array;
  */
 
 public class ArrayDuplicate {
-
+    public String[] remove(String[] array) {
+        String[] ff = new String[1];
+        return ff;
+    }
 }
