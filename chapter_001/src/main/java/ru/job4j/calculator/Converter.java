@@ -14,17 +14,14 @@ public class Converter {
      */
     private static final Integer rubletodollar = 60;
     private static final Integer rubletoeuro = 70;
-
     /**
      *Method rubleToEuro.
      * @param value - value.
      * @return euro.
      */
-
     public double rubleToEuro(int value) {
         return rubletoeuro / value;
     }
-
     /**
      * Method rubleToDollar.
      * @param value - value
@@ -33,7 +30,6 @@ public class Converter {
     public double rubleToDollar(int value) {
         return rubletodollar / value;
     }
-
     /**
      * Method dollarToRuble.
      * @param value - value.
@@ -42,7 +38,6 @@ public class Converter {
     public double dollarToRuble(int value) {
         return value * rubletodollar;
     }
-
     /**
      * Method euroToRuble.
      * @param value - value.

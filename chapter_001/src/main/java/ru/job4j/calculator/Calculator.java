@@ -12,7 +12,6 @@ public class Calculator {
      *variable
      */
     private double result;
-
     /**
      * Method add.
      * @param first - first.

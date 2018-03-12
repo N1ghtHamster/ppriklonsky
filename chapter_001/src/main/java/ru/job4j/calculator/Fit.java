@@ -8,7 +8,6 @@ package ru.job4j.calculator;
  */
 
 public class Fit {
-
     private static final int MAN_MINUS = 100;
     private static final int WOMAN_MINUS = 110;
     private static final double COF = 1.15;

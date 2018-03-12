@@ -8,9 +8,7 @@ import java.util.function.BiPredicate;
  * @version $Id$
  * @since 25.02.2018
  */
-
 public class Paint {
-
     public String rightTrl(int height) {
         return this.loolBy(height,
                 height,

@@ -11,20 +11,18 @@ public class TestQuestion {
     private int[] first = {0, 3, 10, 11, 86, 95, 100};
     private int[] second = {1, 5, 9, 12, 54, 87};
 
-    public int[] testquestion(int [] array) {
-        int [] sum = new int[first.length + second.length + array.length];
-
+    public int[] question(int [] array) {
+        int [] tmp = new int[first.length + second.length + array.length];
         for (int i = 0; i < first.length; i++) {
-            sum[i] = first[i];
+            tmp[i] = first[i];
         }
         for (int i = 0; i < second.length; i++) {
-            sum[i + first.length] = second[i];
+            tmp[i + first.length] = second[i];
         }
         for (int i = 0; i < array.length; i++) {
-            sum[i + (first.length + array.length)] = array[i];
+            tmp[i + (first.length + array.length)] = array[i];
         }
         BubbleSort so = new BubbleSort();
-        int [] summ = so.sotr(sum);
-        return summ;
+        return so.sotr(tmp);
     }
 }

@@ -13,13 +13,13 @@ public class StringFind {
         boolean result = false;
 
         char[] value = origin.toCharArray();
-        char[] substr = sub.toCharArray();
+        char[] str = sub.toCharArray();
 
         for(int i = 0; i <= value.length - 1; i++) {
-            if (value[i] == substr[0]) {
-                for (int j = 0; j < substr.length; j++) {
+            if (value[i] == str[0]) {
+                for (int j = 0; j < str.length; j++) {
                     result = true;
-                    if (value[i + j] != substr[j]) {
+                    if (value[i + j] != str[j]) {
                         result = false;
                         break;
                     }

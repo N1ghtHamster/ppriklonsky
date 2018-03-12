@@ -12,14 +12,14 @@ import java.util.Arrays;
 public class ArrayDuplicate {
     public String[] remove(String[] array) {
         int leng = array.length - 1;
-        String str;
+        String tmp;
         for (int i = 1; i <= leng; i++) {
             if (array[0].equals(array[i])) {
-                str = array[i];
+                tmp = array[i];
                 for (int j = i; j <= leng - 1; j++) {
                     array[j] = array[j + 1];
                 }
-                array[leng - 1] = str;
+                array[leng - 1] = tmp;
                 break;
             }
         }

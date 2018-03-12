@@ -14,12 +14,12 @@ public class Matrix {
      * @return заполенный двухмерный массив.
      */
     int[][] multiple(int size){
-        int[][] arr = new int[size][size];
+        int[][] array = new int[size][size];
         for(int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                arr[i][j] = (i + 1) * (j + 1);
+                array[i][j] = (i + 1) * (j + 1);
             }
         }
-        return arr;
+        return array;
     }
 }

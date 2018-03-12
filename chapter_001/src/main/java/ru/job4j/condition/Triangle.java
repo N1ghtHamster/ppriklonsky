@@ -16,7 +16,6 @@ public class Triangle {
     private Point a;
     private Point b;
     private Point c;
-
     /**
      * Конструктор треугольника
      * @param a - первая вершина треугольника
@@ -28,7 +27,6 @@ public class Triangle {
         this.b = b;
         this.c = c;
     }
-
     /**
      * Метод вычисления полупериметра по длинам сторон.
      * Формула.
@@ -42,7 +40,6 @@ public class Triangle {
     private double period(double ab, double ac, double bc) {
         return (ab + ac + bc) / 2;
     }
-
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
      * Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
@@ -64,7 +61,6 @@ public class Triangle {
         double ac = this.a.distanceTo(this.c);
         double bc = this.b.distanceTo(this.c);
         double p = this.period(ab, ac, bc);
-
         if(this.exist(ab, ac, bc)) {
             rsl = Math.sqrt(Math.abs(p * (p - ab) * (p - ac) * (p - bc)));
         }
