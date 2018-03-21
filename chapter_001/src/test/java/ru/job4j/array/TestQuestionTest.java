@@ -9,10 +9,11 @@ public class TestQuestionTest {
 
     @Test
     public void whenTwoMassPlusThirdThenSortMass() {
-        int [] arr = {1, 4, 7, 8, 9, 30};
+        int[] first = {0, 3, 10, 11, 86, 95, 100};
+        int[] second = {1, 5, 9, 12, 54, 87, 95};
         TestQuestion array = new TestQuestion();
-        int [] rsl = array.question(arr);
-        int [] ex = {0, 1, 1, 3, 4, 5, 7, 8, 9, 9, 10, 11, 12, 30, 54, 86, 87, 95, 100};
+        int [] rsl = array.question(first, second);
+        int [] ex = {0, 1, 3, 5, 9, 10, 11, 12, 54, 86, 87, 95, 95, 100};
         assertThat(rsl, is(ex));
 
     }

@@ -1,28 +1,43 @@
 package ru.job4j.array;
 
 /**
- * Создание сортированного массива из 3 массивов.
+ * Создание сортированного массива из 2 массивов.
  * @author Pavel Priklonsky (votymu@yandex.ru)
  * @version $Id$
  */
 
 public class TestQuestion {
-
-    private int[] first = {0, 3, 10, 11, 86, 95, 100};
-    private int[] second = {1, 5, 9, 12, 54, 87};
-
-    public int[] question(int [] array) {
-        int [] tmp = new int[first.length + second.length + array.length];
-        for (int i = 0; i < first.length; i++) {
-            tmp[i] = first[i];
+    public int[] question(int [] first, int [] second) {
+        int [] merged = new int[first.length + second.length];
+        int fIncrease = 0;
+        int sIncrease = 1;
+        for (int i = 0; i < selection(first.length, second.length); i++) {
+            if (first.length == second.length) {
+                if (first [i] < second [i]) {
+                    merged [i + fIncrease] = first [i];
+                    merged [i + sIncrease] = second [i];
+                    fIncrease += 1;
+                    sIncrease += 1;
+                } else {
+                    merged [i + fIncrease] = second [i];
+                    merged [i + sIncrease] = first [i];
+                    fIncrease += 1;
+                    sIncrease += 1;
+                }
+            }
         }
-        for (int i = 0; i < second.length; i++) {
-            tmp[i + first.length] = second[i];
+        return merged;
+    }
+    private int selection(int a, int b) {
+        int select;
+        if (a < b) {
+            select = a;
+        } else {
+            select = b;
         }
-        for (int i = 0; i < array.length; i++) {
-            tmp[i + (first.length + array.length)] = array[i];
+        if (a == b) {
+            select = a;
         }
-        BubbleSort so = new BubbleSort();
-        return so.sotr(tmp);
+        return select;
     }
 }
