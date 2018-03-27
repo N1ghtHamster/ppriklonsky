@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class FindLoopTest {
     @Test
-    public void whenSquareToFiveFindSixteen(){
+    public void whenSquareToFiveFindSixteen() {
         Square square = new Square();
         int[] sq = square.calculate(5);
         FindLoop findLoop = new FindLoop();
@@ -15,7 +15,7 @@ public class FindLoopTest {
         assertThat(expect, is(3));
     }
     @Test
-    public void whenSquareToFiveFindNoFaund(){
+    public void whenSquareToFiveFindNoFaund() {
         Square square = new Square();
         int[] sq = square.calculate(5);
         FindLoop findLoop = new FindLoop();

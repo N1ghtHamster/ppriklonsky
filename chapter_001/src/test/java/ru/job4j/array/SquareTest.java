@@ -12,7 +12,7 @@ import static org.junit.Assert.assertThat;
  */
 public class SquareTest {
     @Test
-    public void whenSquareToFive(){
+    public void whenSquareToFive() {
         Square square = new Square();
         int[] rsl = square.calculate(5);
         int[] expect = {1, 4, 9, 16, 25};

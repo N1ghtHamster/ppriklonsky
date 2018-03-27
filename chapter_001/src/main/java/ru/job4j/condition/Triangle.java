@@ -61,10 +61,9 @@ public class Triangle {
         double ac = this.a.distanceTo(this.c);
         double bc = this.b.distanceTo(this.c);
         double p = this.period(ab, ac, bc);
-        if(this.exist(ab, ac, bc)) {
+        if (this.exist(ab, ac, bc)) {
             rsl = Math.sqrt(Math.abs(p * (p - ab) * (p - ac) * (p - bc)));
-        }
-        else {
+        } else {
             rsl = -1;
         }
         return rsl;

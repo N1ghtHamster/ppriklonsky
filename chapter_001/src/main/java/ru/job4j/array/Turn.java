@@ -13,9 +13,9 @@ public class Turn {
      * @param array - массив для переворота.
      * @return перевернутый массив.
      */
-    public int[] back(int[] array){
+    public int[] back(int[] array) {
         int leng = array.length - 1;
-        for(int i = 0; i <= leng; i++){
+        for (int i = 0; i <= leng; i++) {
             int a = array[i];
             array[i] = array[leng];
             array[leng] = a;

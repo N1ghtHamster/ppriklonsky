@@ -14,8 +14,9 @@ public class Factorial {
      */
     public int fac(int n) {
         int factor = 1;
-        for (int i = 1; i<= n; ++i)
+        for (int i = 1; i <= n; ++i) {
             factor *= i;
+        }
         return factor;
     }
 }

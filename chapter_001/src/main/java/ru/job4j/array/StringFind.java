@@ -15,7 +15,7 @@ public class StringFind {
         char[] value = origin.toCharArray();
         char[] str = sub.toCharArray();
 
-        for(int i = 0; i <= value.length - 1; i++) {
+        for (int i = 0; i <= value.length - 1; i++) {
             if (value[i] == str[0]) {
                 for (int j = 0; j < str.length; j++) {
                     result = true;

@@ -7,8 +7,8 @@ package ru.job4j.array;
  */
 
 public class TestQuestion {
-    public int[] question(int [] first, int [] second) {
-        int [] merged = new int[first.length + second.length];
+    public int[] question(int[] first, int[] second) {
+        int[] merged = new int[first.length + second.length];
         int fIncrease = 0;
         int sIncrease = 1;
         for (int i = 0; i < selection(first.length, second.length); i++) {
