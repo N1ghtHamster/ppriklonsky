@@ -10,34 +10,26 @@ public class TestQuestion {
     public int[] question(int[] first, int[] second) {
         int[] merged = new int[first.length + second.length];
         int fIncrease = 0;
-        int sIncrease = 1;
-        for (int i = 0; i < selection(first.length, second.length); i++) {
-            if (first.length == second.length) {
-                if (first [i] < second [i]) {
-                    merged [i + fIncrease] = first [i];
-                    merged [i + sIncrease] = second [i];
-                    fIncrease += 1;
-                    sIncrease += 1;
-                } else {
-                    merged [i + fIncrease] = second [i];
-                    merged [i + sIncrease] = first [i];
-                    fIncrease += 1;
-                    sIncrease += 1;
-                }
+        int sIncrease = 0;
+        for (int i = 0; i < merged.length; i++) {
+            if (fIncrease > first.length - 1) {
+                int f = second[sIncrease];
+                merged[i] = f;
+                sIncrease++;
+            } else if (sIncrease > second.length - 1){
+                int s = first[fIncrease];
+                merged[i] = s;
+                fIncrease++;
+            } else if (first[fIncrease] < second[sIncrease]) {
+                int a = first[fIncrease];
+                merged[i] = a;
+                fIncrease++;
+            } else {
+                int b = second[sIncrease];
+                merged[i] = b;
+                sIncrease++;
             }
         }
         return merged;
-    }
-    private int selection(int a, int b) {
-        int select;
-        if (a < b) {
-            select = a;
-        } else {
-            select = b;
-        }
-        if (a == b) {
-            select = a;
-        }
-        return select;
     }
 }
