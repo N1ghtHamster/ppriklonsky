@@ -4,7 +4,6 @@ package ru.job4j.models;
  * Класс Профессии.
  * @author Pavel Priklonsky (votymu@yandex.ru)
  * @version $Id$
- * @since 28.02.2018
  */
 
 public class Profession {
