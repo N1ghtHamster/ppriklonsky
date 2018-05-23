@@ -11,6 +11,7 @@ public class Factorial {
     /**
      * Вычисление факториала числа n.
      * @param n - число для вычисления факториала
+     * @return factor
      */
     public int fac(int n) {
         int factor = 1;

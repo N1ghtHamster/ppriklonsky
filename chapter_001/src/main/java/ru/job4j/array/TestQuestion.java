@@ -16,7 +16,7 @@ public class TestQuestion {
                 int f = second[sIncrease];
                 merged[i] = f;
                 sIncrease++;
-            } else if (sIncrease > second.length - 1){
+            } else if (sIncrease > second.length - 1) {
                 int s = first[fIncrease];
                 merged[i] = s;
                 fIncrease++;

@@ -22,6 +22,7 @@ public class Max {
      * @param first - первое.
      * @param second - второе.
      * @param third - третье.
+     * @return большее.
      */
     public int maxThird(int first, int second, int third) {
         return max(max(first, second), third);
