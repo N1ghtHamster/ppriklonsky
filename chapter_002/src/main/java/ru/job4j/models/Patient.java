@@ -6,6 +6,6 @@ package ru.job4j.models;
  * @version $Id$
  */
 
-public class Patient extends Profession{
+public class Patient extends Profession {
 
 }

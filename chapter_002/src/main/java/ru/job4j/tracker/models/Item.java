@@ -12,11 +12,8 @@ public class Item {
     private String name;
     private String description;
     private long create;
-<<<<<<< HEAD
-    public Item() {
-=======
+
     private Item() {
->>>>>>> 546b14f7a632ffea025ad279a0ae5bd51d380ee1
     }
     /**
      * Конструктор класса Элемент.

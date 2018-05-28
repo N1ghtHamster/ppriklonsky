@@ -8,7 +8,7 @@ package ru.job4j.models;
 
 public class Student extends Profession {
     private String kurs;
-    private Student(String name, String kurs){
+    private Student(String name, String kurs) {
         this.name = name;
         this.kurs = kurs;
     }

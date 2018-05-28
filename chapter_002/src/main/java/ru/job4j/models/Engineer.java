@@ -7,7 +7,7 @@ package ru.job4j.models;
  */
 
 public class Engineer extends Profession {
-    private Engineer(String name, String profession){
+    private Engineer(String name, String profession) {
         this.name = name;
         this.profession = profession;
     }

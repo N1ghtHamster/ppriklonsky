@@ -8,7 +8,7 @@ package ru.job4j.models;
 
 public class House {
     private String size;
-    private House(String size){
+    private House(String size) {
         this.size = size;
     }
     public String getSize() {

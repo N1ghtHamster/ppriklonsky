@@ -55,10 +55,6 @@ public class Tracker {
         }
         return result;
     }
-<<<<<<< HEAD
-    String generateId() {
-        return String.valueOf(new Date() + RN.next(100));
-=======
 
     /**
      * Генерация уникального ключа для заявки.
@@ -66,6 +62,5 @@ public class Tracker {
      */
     private String generateId() {
         return String.valueOf(RN.nextDouble());
->>>>>>> 546b14f7a632ffea025ad279a0ae5bd51d380ee1
     }
 }
