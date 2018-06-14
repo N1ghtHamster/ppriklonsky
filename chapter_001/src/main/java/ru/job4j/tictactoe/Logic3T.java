@@ -8,7 +8,30 @@ public class Logic3T {
     }
 
     public boolean isWinnerX() {
-        return false;
+        boolean result = true;
+        boolean result0 = true;
+        boolean result1 = true;
+        boolean result2 = true;
+        /**for (int i = 0; i != table.length; i++) {
+            for (int j = 0; j != table.length; j++) {
+                if (table[0][0] != table[j][i]) {
+                    result = false;
+                }
+                if (table[0][0] != table[i][j]) {
+                    result0 = false;
+                }
+            }
+        }*/
+        for (int i = 0; i != table.length; i++) {
+            int j = table.length - 1;
+            if (table[0][0] != table[i][i]) {
+                result1 = false;
+            }
+            if (table[j][0] != table[j - i][i]) {
+                result2 = false;
+            }
+        }
+        return result1 || result2;
     }
 
     public boolean isWinnerO() {
@@ -16,15 +39,7 @@ public class Logic3T {
     }
 
     public boolean hasGap() {
-        boolean a = false;
-        for (int i = 0; i != table.length; i++) {
-            for (int j = 0; j != table.length; j++) {
-                if (table[0][0] == table[i][j]) {
-                    a = true;
-                }
-            }
-        }
-        return a;
+        return false;
     }
 }
 
