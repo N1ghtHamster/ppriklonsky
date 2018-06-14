@@ -11,7 +11,6 @@ public class Logic3T {
         boolean result = true;
         boolean result0 = true;
         boolean result1 = true;
-        boolean result2 = true;
         /**for (int i = 0; i != table.length; i++) {
             for (int j = 0; j != table.length; j++) {
                 if (table[0][0] != table[j][i]) {
@@ -22,16 +21,14 @@ public class Logic3T {
                 }
             }
         }*/
+
         for (int i = 0; i != table.length; i++) {
             int j = table.length - 1;
-            if (table[0][0] != table[i][i]) {
+            if (table[0][0] != table[i][i] || table[j][0] != table[j - i][i]) {
                 result1 = false;
             }
-            if (table[j][0] != table[j - i][i]) {
-                result2 = false;
-            }
         }
-        return result1 || result2;
+        return result1;
     }
 
     public boolean isWinnerO() {
